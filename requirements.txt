@@ -4,7 +4,6 @@ setuptools
 wheel
 aiofiles
 aiohttp
-json
 beautifulsoup4
 cairosvg
 cfscrape
