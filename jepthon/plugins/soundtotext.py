@@ -8,14 +8,14 @@ from datetime import datetime
 import speech_recognition as sr
 from pydub import AudioSegment
 
-from jepthon import jepiq
+from userbot import iqthon
 from ..core.managers import edit_delete, edit_or_reply
 from ..helpers import media_type
 
 plugin_category = "utils"
 
 
-@jepiq.ar_cmd(pattern="احجي(?:\s|$)([\s\S]*)",
+@iqthon.iq_cmd(pattern="احجي(?:\s|$)([\s\S]*)",
                command=("احجي", plugin_category),
               )
 async def _(event):
@@ -37,9 +37,9 @@ async def _(event):
             event,
             "`قم بالرد على رسالة او مقطع صوتي لتحويله الى نص.`",
         )
-    jepevent = await edit_or_reply(event, "`يجري تنزيل الملف...`")
+    catevent = await edit_or_reply(event, "`يجري تنزيل الملف...`")
     oggfi = await event.client.download_media(reply, Config.TEMP_DIR)
-    await jepevent.edit("`يجري تحويل الكلام الى نص....`")
+    await catevent.edit("`يجري تحويل الكلام الى نص....`")
     r = sr.Recognizer()
     #audio_data = open(required_file_name, "rb").read()
     ogg = oggfi.removesuffix('.ogg')
@@ -62,7 +62,7 @@ async def _(event):
     string_to_show = "**يكول : **`{}`".format(
             text
         )
-    await jepevent.edit(string_to_show)
+    await catevent.edit(string_to_show)
     # now, remove the temporary file
     os.remove(oggfi)
     os.remove(f"{ogg}.wav")
