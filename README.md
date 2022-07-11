@@ -8,7 +8,7 @@
 
 
 ### استخراج كود تيرمكس  ##
-[![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://replit.com/@JepThonAR/stringsession)
+[![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://replit.com/@jep/stringsession)
 - احصل على الايبي هاش والايبي ايدي من  [هـنا](https://my.telegram.org/)    
 
 ### التنصيب عبر هيروكو ##
